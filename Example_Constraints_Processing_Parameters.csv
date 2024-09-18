@@ -1,0 +1,22 @@
+﻿Category,ConstraintName,Setback,Constraint Class,Data Source,where
+Infrastructure,Numbered Highway ROW,40,No-go,.\Constraints\Constraints.gdb\Highway_ROW,
+Infrastructure,County Roads ROW,100,Mitigate,.\Constraints\Constraints.gdb\Road_ROW,
+Infrastructure,Residence,1000,No-go,.\Constraints\Constraints.gdb\Receptors_ResidenceLocations,Status = 'Occupied'
+Infrastructure,Parcel boundary,50.0,Mitigate,.\Constraints\Constraints.gdb\Property_Line,
+Infrastructure,Zoning Issues,0.0,No-go,.\Constraints\Constraints.gdb\Zoning_Issues_Approximate,
+Infrastructure,Communications Towers,125.0,Mitigate,.\Constraints\Constraints.gdb\Telecom_Tower,
+Infrastructure,Overhead Distribution Lines,50.0,No-go,.\Constraints\Constraints.gdb\Electric_Distribution_Line,
+Oil and Gas,Abandoned Oil And Gas Wells,5.0,Be Aware,.\Constraints\Constraints.gdb\Abandoned_Well,
+Oil and Gas,Oil And Gas Wells,0,Mitigate,.\Constraints\Constraints.gdb\Well_Lease,
+Oil and Gas,Pipelines ROW,0.0,Be Aware,.\Constraints\Constraints.gdb\Pipeline_ROW,
+Oil and Gas,Low Pressure Pipeline,5.0,Be Aware,.\Constraints\Constraints.gdb\Low_Pressure_Pipeline,
+Environmental,Intermittent Watercourse,45,Be Aware,.\Constraints\Constraints.gdb\Intermittent_Watercourse,
+Environmental,Small Permenant Watercourse ,45,Be Aware,.\Constraints\Constraints.gdb\Small_Permanent_Watercourse,
+Environmental,Wetlands Class 3 4 5,0,No-go,.\Constraints\Constraints.gdb\Wetlands_within_near_PA,"WaterPermanence IN ('III', 'IV', 'V', 'VI') Or AWCS_Class = 'Dugout'"
+Environmental,Wetlands Class 3 4 5 Setbacks,100,Mitigate,.\Constraints\Constraints.gdb\Wetlands_within_near_PA,"WaterPermanence IN ('III', 'IV', 'V', 'VI') Or AWCS_Class = 'Dugout'"
+Environmental,Wetlands ‐ Class 2,10,Be Aware,.\Constraints\Constraints.gdb\Wetlands_within_near_PA,WaterPermanence IN ('II')
+Environmental,Waterbody ‐ Class 1,0,Be Aware,.\Constraints\Constraints.gdb\Wetlands_within_near_PA,WaterPermanence IN ('I')
+Environmental,Native Prairie,0,No-go,.\Constraints\Constraints.gdb\Habitat_Landcover,Landcover = 'Native Grassland'
+Environmental,Native Prairie Setback,100,Be Aware,.\Constraints\Constraints.gdb\Habitat_Landcover,Landcover = 'Native Grassland'
+Environmental,Coulee / Valley Break,100,No-go,.\Constraints\Constraints.gdb\Habitat_Landcover,Landcover = 'Coulee'
+Environmental,Wildlife Features,0,No-go,.\Constraints\Constraints.gdb\WildlifeFeatures_Setbacks,Species NOT IN ('CORA')
